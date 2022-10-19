@@ -17,12 +17,17 @@ const PokedexById = () => {
   
   }, [])
 
-
   //console.log(pokemon)
-  
-
   return (
-    <div>PokedexById</div>
+    <article>
+      <header>
+        <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+      </header>
+      <section>
+        <h2>{pokemon?.name}</h2>
+      </section>
+
+    </article>
   )
 }
 

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import InputSearch from '../components/home/pokedex/InputSearch'
 import CardPoke from '../components/home/pokedex/styles/CardPoke'
 
 const Pokedex = () => {
