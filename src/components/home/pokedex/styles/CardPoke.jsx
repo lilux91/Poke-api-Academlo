@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './components/home/pokedex/styles/cardPoke.css'
+
+
 const CardPoke = ({url}) => {
 
     const [pokemon, setPokemon] = useState()

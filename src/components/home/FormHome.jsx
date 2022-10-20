@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setUserNameGlobal } from "../../store/slices/userName.slice";
+import "./components/formHoome.css";
 
 const FormHome = () => {
 
@@ -14,7 +15,8 @@ const FormHome = () => {
     //despachar
     dispatch(setUserNameGlobal(e.target.firstChild.value.trim()))
     //navega a pokedex
-    navigate('/pokedex/' + e.target.firstChild.value.trim())
+    navigate('/pokedex')
+    //navigate('/pokedex/' + e.target.firstChild.value.trim())
   }
 
   return (
