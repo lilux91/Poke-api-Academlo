@@ -14,7 +14,7 @@ const FormHome = () => {
     //despachar
     dispatch(setUserNameGlobal(e.target.firstChild.value.trim()))
     //navega a pokedex
-    navigate('/pokedex')
+    navigate('/pokedex/' + e.target.firstChild.value.trim())
   }
 
   return (
