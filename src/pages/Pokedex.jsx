@@ -76,6 +76,6 @@ const finalPoke = page * pokePerPage
     </div>
   )
 
-}    
+      }    
 
 export default Pokedex
