@@ -12,7 +12,7 @@ const PokedexById = () => {
   const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
-    const URL= `https://pokeapi.co/api/v2/pokemon/${id}/`
+    const URL= `https://pokeapi.co/api/v2/pokemon/${id}`
     axios.get(URL)
     .then(res => setPokemon(res.data))
     .catch(err => {
