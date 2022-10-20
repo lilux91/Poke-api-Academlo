@@ -8,7 +8,7 @@ const PokedexById = () => {
   const {id} = useParams()
 
  // console.log(id)
-  const [pokemon, setPokemon] = useState()
+  const [pokemon, setPokemon] = useState(1)
   const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
