@@ -5,10 +5,8 @@ const SelectByType = ({setTypesSelected}) => {
 
   const [types, setTypes] = useState()
 
-
-
  useEffect(() => {
-  const URL ='https://pokeapi.com.api/v2/type'
+  const URL ='https://pokeapi.co.api/v2/type'
  axios.get(URL)
     .then(res => setTypes(res.data))
     .catch(err => console.log(err))
