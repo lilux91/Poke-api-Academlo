@@ -2,8 +2,84 @@ body{
     background-color: rgba(132, 239, 19, 0.341);
 }
 .card-poke{
-    width: 350px;
-    border: 2px solid black;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(42, 42, 42, 0.25);
+    transition: 0.4s ease;
+    margin: 2rem;
+    padding: 2rem;
+}
+.card-poke:hover {
+    transform: translateY(-10px);
+    transform-origin: center;
+    transition: 0.4s ease;
+}
+.card-poke:active {
+    transform: perspective(100px) scale3d(0, 0.1, 0.1) skew(5deg, 2deg);
+    transform-origin: center;
+    transition: 0.5s;
+}
+.card-poke_header {
+    height: 200px;
+    background-color: gray;
+    position: relative;
+    margin-bottom: 65px;
+}
+.card-poke_sprite {
+    width: 60%;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-poke_body {
+    margin-bottom: 30px;
+}
+.card-poke_name {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.card-poke_type {
+    font-size: 17;
+    text-transform: capitalize;
+    position: relative;
+}
+.card-poke__type-label {
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+.card-poke_stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 5px;
+    justify-content: center;
+    padding: 0 5px 35px;
+}
+.card-poke_stat {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.card-poke_stat-label {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.card-poke_stat-number {
+    font-size: 18px;
+    padding-left: 1rem;
+}
+.card-poke_types-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 .card-poke_stats-container{
     display: flex;

@@ -24,7 +24,7 @@ const CardPoke = ({ url }) => {
   return (
     <article
       style={{ backgroundColor: colors[pokemon?.types[0].type.name] }}
-      className={`card-poke border-${pokemon?.types[0].type.name}`}
+      className={`card-poke ${pokemon?.types[0].type.name}`}
       onClick={handleClick}
     >
       <header className={`card-poke_header ${pokemon?.types[0].type.name}`}>
