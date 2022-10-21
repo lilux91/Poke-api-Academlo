@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { colors } from "../../../../helper/colors";
 import "./cardPoke.css";
+
 const CardPoke = ({ url }) => {
   const [pokemon, setPokemon] = useState();
 
@@ -21,10 +23,11 @@ const CardPoke = ({ url }) => {
 
   return (
     <article
+      style={{ backgroundColor: colors[pokemon?.types[0].type.name] }}
       className={`card-poke border-${pokemon?.types[0].type.name}`}
       onClick={handleClick}
     >
-      <header className={`card-poke_header {pokemon?.types[0].type.name}`}>
+      <header className={`card-poke_header ${pokemon?.types[0].type.name}`}>
         <img
           className="card-poke_sprite"
           src={pokemon?.sprites.other["official-artwork"].front_default}
@@ -48,11 +51,16 @@ const CardPoke = ({ url }) => {
       <ul className="card-poke_stats-container">
         {pokemon?.stats.map((stat) => (
           <li key={stat.stat.name} className="card-poke_stat">
-            <span className="card-poke_stat-label">{stat.stat.name}</span>
             <span
-              className={`card-poke_stat-number letter-${pokemon?.types[0].type.name}`}
+              className="card-poke-bar"
+              style={{ width: `${stat.base_stat}%` }}
             >
-              {stat.base_stat}
+              <span className="card-poke_stat-label">{stat.stat.name}</span>
+              <span
+                className={`card-poke_stat-number letter-${pokemon?.types[0].type.name}`}
+              >
+                {stat.base_stat}
+              </span>
             </span>
           </li>
         ))}

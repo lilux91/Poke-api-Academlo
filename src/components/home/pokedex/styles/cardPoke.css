@@ -1,9 +1,33 @@
 body{
-    background-color: blueviolet;
+    background-color: rgba(132, 239, 19, 0.341);
 }
 .card-poke{
     width: 350px;
     border: 2px solid black;
 }
+.card-poke_stats-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.card-poke_stat{
+    border: 1px solid black;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+.card-poke-bar{
+    position: absolute;
+    left:0;
+    padding-left: 1rem;
+    background-color: red;
+    border-radius: 10px;  
+}
+
 
 
