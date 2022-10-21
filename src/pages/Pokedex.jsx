@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import InputSearch from "../components/home/pokedex/InputSearch";
 import SelectByType from "../components/home/pokedex/SelectByType";
 import CardPoke from "../components/home/pokedex/styles/CardPoke";
+import '../pages/styles/pokedex.css'
+
 
 const Pokedex = () => {
   const [pokemons, setPokemons] = useState();
