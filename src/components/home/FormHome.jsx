@@ -2,22 +2,21 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setUserNameGlobal } from "../../store/slices/userName.slice";
-import "./components/formHoome.css";
+import "./shared/formHome.css";
 
 const FormHome = () => {
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   //navegar hacia
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const submit = e => {
-    e.preventDefault()
+  const submit = (e) => {
+    e.preventDefault();
     //despachar
-    dispatch(setUserNameGlobal(e.target.firstChild.value.trim()))
+    dispatch(setUserNameGlobal(e.target.firstChild.value.trim()));
     //navega a pokedex
-    navigate('/pokedex')
+    navigate("/pokedex");
     //navigate('/pokedex/' + e.target.firstChild.value.trim())
-  }
+  };
 
   return (
     <form onSubmit={submit} className="pokedex_form">
@@ -28,7 +27,7 @@ const FormHome = () => {
       ></input>
       <button className="pokedex_btn">Catch then all!</button>
     </form>
-  )
-}
+  );
+};
 
 export default FormHome;
