@@ -6,13 +6,13 @@ const Pagination = ({ page, pagesLength, setPage }) => {
   const currentBlock = Math.ceil(page / pagesPerBlock);
   const blockLength = Math.ceil(pagesLength / pagesPerBlock);
 
-  const arrPages = [];
+  const arrePages = [];
   const initialPage = (currentBlock - 1) * pagesPerBlock + 1;
   //  initialPage + pagesPerBlock - 1
   const limitPage =
     blockLength === currentBlock ? pagesLength : currentBlock * pagesPerBlock;
   for (let i = initialPage; i <= limitPage; i++) {
-    arrPages.push(i);
+    arrePages.push(i);
   }
 
   const handlePrev = () => {
@@ -27,6 +27,14 @@ const Pagination = ({ page, pagesLength, setPage }) => {
     setPage(currentPage);
   };
 
+  const handleFirst = () => {
+    setPage(1);
+  };
+
+  const handleLast = () => {
+    setPage(pagesLength);
+  };
+
   return (
     <div className="pagination">
       {page > 1 && (
@@ -37,17 +45,34 @@ const Pagination = ({ page, pagesLength, setPage }) => {
           &#60;
         </div>
       )}
+      {page > 1 && (
+        <div
+          onClick={handleFirst}
+          className="pagination__page pagination__active"
+        >
+          ...
+        </div>
+      )}
+
       <ul className="pagination__container">
-        {arrPages.map((e) => (
+        {arrePages.map((e) => (
           <li
-            onClick={() => handlePage(e)}
             className={`pagination__page ${page === e && "pagination__active"}`}
+            onClick={() => handlePage(e)}
             key={e}
           >
             {e}
           </li>
         ))}
       </ul>
+      {page < pagesLength && (
+        <div
+          onClick={handleLast}
+          className="pagination__page pagination__active"
+        >
+          ...
+        </div>
+      )}
       {page < pagesLength && (
         <div
           onClick={handleNext}
