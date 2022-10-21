@@ -1,3 +1,6 @@
+
+ 
+
 .pokedex{
     display: flex;
     flex-direction: column;
@@ -7,8 +10,24 @@
     gap: 30px;
     padding: 20px;
     padding-bottom: 100px;
+    background-image: url(/public/images/img-1-NJ5QeT1YB-transformed.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
+.card_intro{
+    position: absolute;
+    background-color: rgba(230, 60, 13, 0.6);
+    padding: 4rem ;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    transition: box-shadow 200ms ease;
+    margin:2rem;
+    box-shadow: 3px 2px 8px rgba(7, 7, 7, 0.878);
+    font-size: 1.2rem;
+}
 .pokedex_img{
     margin-bottom:10px;
     max-width: 450px;
@@ -16,6 +35,7 @@
 .pokedex_subtitle{
     text-align: center;
     color: var(--color_red);
+    text-shadow: 8px 5px 10px rgba(0, 0, 0, 0.878);
     font-size: 2rem;
     margin-bottom: 2px;
 }

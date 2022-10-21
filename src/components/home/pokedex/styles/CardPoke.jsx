@@ -22,9 +22,10 @@ const CardPoke = ({ url }) => {
   };
 
   return (
+    <section className="All_card">
     <article
       style={{ backgroundColor: colors[pokemon?.types[0].type.name] }}
-      className={`card-poke ${pokemon?.types[0].type.name}`}
+      className={`Card-poke-all ${pokemon?.types[0].type.name}`}
       onClick={handleClick}
     >
       <header className={`card-poke_header ${pokemon?.types[0].type.name}`}>
@@ -66,6 +67,7 @@ const CardPoke = ({ url }) => {
         ))}
       </ul>
     </article>
+    </section>
   );
 };
 
