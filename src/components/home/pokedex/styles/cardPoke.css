@@ -6,7 +6,7 @@ body{
 } 
 .card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     
 }
 .Card-poke-all{
@@ -108,6 +108,6 @@ body{
     position: absolute;
     left:0;
     padding-left: 1rem;
-    background-color: red;
+    background-color: rgb(226, 145, 145);
     border-radius: 10px;  
 }
