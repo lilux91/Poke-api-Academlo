@@ -1,12 +1,13 @@
-.footer{
-    background-color: var(--color_red);
+.footer__red {
+    background-color: var(--color-red);
     width: 100%;
     height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
-.footer_black{
+
+.footer__black {
     background-color: #222;
     width: 100%;
     height: 40px;
@@ -15,24 +16,24 @@
     left: 0;
 }
 
-.footer_circle{
+.footer__circle {
     width: 80px;
     aspect-ratio: 1;
     position: absolute;
     background-color: #222;
     border-radius: 50%;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
 
-.footer_circle-int{
-    width: 50px;
+.footer__circle-int {
+    width: 60px;
     aspect-ratio: 1;
     position: absolute;
     background-color: #222;
     border-radius: 50%;
     left: 50%;
-    transform: translate(-50% , 10px);
+    transform: translate(-50%, 10px);
     border: 9px solid white;
 }
