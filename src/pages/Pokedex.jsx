@@ -71,13 +71,6 @@ const Pokedex = () => {
           ))}
         </div>
       </main>
-      <div className="aside">
-        <Pagination
-          page={page}
-          pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
-          setPage={setPage}
-        />
-      </div>
     </div>
   );
 };
