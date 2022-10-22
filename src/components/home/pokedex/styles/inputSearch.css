@@ -1,16 +1,14 @@
-input__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.input__container{
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .input__btn {
-    padding: 10px;
+    padding: 8px;
     width: 20%;
     min-width: 150px;
     height: 45px;
-    margin-top: 20px;
-    margin-bottom: 40px;
     border-radius: 10px;
     background-color: #D93F3F;
     color: white;
@@ -27,8 +25,11 @@ input__container {
 }
 
 .input__search {
-    border-radius: 10px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 ;
     padding: 20px;
     width: 75%;
     max-width: 500px;
@@ -37,5 +38,5 @@ input__container {
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
 }

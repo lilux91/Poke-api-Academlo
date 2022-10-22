@@ -50,8 +50,8 @@ const Pokedex = () => {
   return (
     <div>
       <header>
-        <h1>Pokedex</h1>
-        <p>
+        <h1 >Pokedex</h1>
+        <p className="title_pokedex">
           Welcome
           <span>{userName}, here you can find your favorite pokemon.</span>
         </p>
