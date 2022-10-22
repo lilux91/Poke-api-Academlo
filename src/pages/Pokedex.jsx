@@ -36,8 +36,9 @@ const Pokedex = () => {
 
   //Lógica de programación
   const [page, setPage] = useState(1);
-  //Para que te aparezca los pokemons que queres que se vea en la pagina
-  const [pokePerPage, setPokePerPage] = useState(8);
+
+  const [pokePerPage, setPokePerPage] = useState(100);
+
   //initial 1-1  8=0
   //2-1          8 =8
   //3-1          8=16

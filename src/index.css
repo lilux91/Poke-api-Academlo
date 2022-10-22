@@ -14,6 +14,19 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+header{
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+h1{
+    color: #fe1936;
+    font-size: 42px;
+}
+p{
+    padding: 1rem;
+    font-size: 18;
+}
 h1, h2, h3, h4, ul, p{
     margin-top: 0;
     margin-bottom: 0;
@@ -33,8 +46,18 @@ a{
 
 button{
     border: none;
+    background-color: #fe1936;
+    border-radius: 5px;
+    cursor: pointer;
 }
 input{
     outline: none;
     border: none;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+select{
+    cursor: pointer;
 }

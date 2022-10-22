@@ -5,7 +5,7 @@ export const colors = {
     ice: "#cbebeb",
     psychic: "#fbabc3",
     electric: "#fbe797",
-    grass: "#bbe3a7",
+    grass: "  #96dc5c ",
     water: "#DEF3FD",
     fire: "#f7bf97",
     steel: "#dbdbe7",
