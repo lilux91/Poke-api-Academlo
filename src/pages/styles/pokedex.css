@@ -7,6 +7,25 @@ body{
 }
 
 .title_pokedex{
-    font-size: 1.5rem;
-    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 12rem;
+    font-weight: 900;
+    font-family: 'Londrina Sketch', italic;
+    color: rgb(232, 207, 13);
+    text-shadow:8px 5px 10px  rgb(2, 10, 125);
+}
+
+.subtitle_pokedex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: serif;
+    color: rgb(2, 10, 125, 0.8);
+    text-shadow:8px 5px 10px  rgb(220, 195, 7);
+    margin-bottom: 2rem;
+
 }

@@ -6,13 +6,9 @@
 }
 
 .pokedex_btn {
-    padding: 10px;
     text-align: center;
-    width: 25%;
-    min-width: 185px;
-    height: 60px;
     border-radius: 5px;
-    background-color: #D93F3F;
+    background-image: linear-gradient(to bottom, #110d0d, #171414, #1d1919, #221f1f, #282424, #2d2929, #332f2f, #383434, #3f3a3a, #454040, #4c4747, #534d4d);    width: 100%;
     color: white;
     cursor: pointer;
     transition: filter 100ms ease;

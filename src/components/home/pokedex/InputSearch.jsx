@@ -14,7 +14,14 @@ const InputSearch = () => {
   return (
     <form className='input__container' onSubmit={submit}>
       <input className='input__search' id="search" type="text" placeholder="Search a pokemon" />
-      <button className='input__btn'>Search</button>
+      
+             <button className='input__btn'>
+            <div className='btn_black'></div>
+            <div className='btn_circle'>
+            <div className='btn_circle-int'></div>
+            </div>
+            Search</button>
+            
     </form>
   );
 };
