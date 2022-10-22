@@ -10,23 +10,23 @@ function App() {
   return (
     <div className="App">
       <Routes>
-       { 
-       //*Ruta libre*//
+        {
+          //*Ruta libre*//
         }
         <Route path="/" element={<Home />} />
 
         {
-        //**Ruta protegida */
+          //**Ruta protegida */
         }
         <Route element={<ProtectedRoutes />} />
-          <Route path="/pokedex" element={<Pokedex />} />
-          <Route path="/pokedex/:id" element={<PokedexById />} />
+        <Route path="/pokedex" element={<Pokedex />} />
+        <Route path="/pokedex/:id" element={<PokedexById />} />
       </Routes>
-      <div>
-        <Footer/>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 export default App;

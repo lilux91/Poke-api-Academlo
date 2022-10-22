@@ -3,14 +3,9 @@
 } 
 .card-container{
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    
-=======
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 1.5rem;
     margin-bottom: 0;
->>>>>>> 40e5b4385c52a2353033bd866a3a5dd9cebe5bc3
     
 }
 .Card-poke-all{
@@ -133,14 +128,8 @@
     position: absolute;
     left:0;
     padding-left: 1rem;
-<<<<<<< HEAD
     background-color: rgb(226, 145, 145);
     border-radius: 10px;  
-=======
-    background-image: radial-gradient(circle at 71.87% 42.04%, #ffff35 0, #e2c818 50%, #a48a00 100%);
-    border-color:#e2c818;  
-    height: 20px;
->>>>>>> 40e5b4385c52a2353033bd866a3a5dd9cebe5bc3
 }
 
 
