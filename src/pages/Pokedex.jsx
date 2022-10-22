@@ -4,16 +4,16 @@ import { useSelector } from "react-redux";
 import InputSearch from "../components/home/pokedex/InputSearch";
 import SelectByType from "../components/home/pokedex/SelectByType";
 import CardPoke from "../components/home/pokedex/styles/CardPoke";
-import '../pages/styles/pokedex.css'
-import '../components/home/pokedex/styles/inputSearch.css'
-
+import "../pages/styles/pokedex.css";
+import "../components/home/pokedex/styles/inputSearch.css";
+import Pagination from "../pages/Pagination";
 
 const Pokedex = () => {
   const [pokemons, setPokemons] = useState();
   const [typeSelected, setTypeSelected] = useState("All Pokemons");
 
   useEffect(() => {
-    if (typeSelected !== "All Pokemons") {
+    if (typeSelected != "All Pokemons") {
       //Si se selecciono un tipo
       axios
         .get(typeSelected)
@@ -34,15 +34,10 @@ const Pokedex = () => {
 
   const userName = useSelector((state) => state.userName);
 
-  //Lógica de programación
+  //!Lógica de paginacion
+
   const [page, setPage] = useState(1);
-
-  const [pokePerPage, setPokePerPage] = useState(100);
-
-  //initial 1-1  8=0
-  //2-1          8 =8
-  //3-1          8=16
-
+  const [pokePerPage, setPokePerPage] = useState(8);
   const initialPoke = (page - 1) * pokePerPage;
   //initialPoke + pokePerPage +1
   const finalPoke = page * pokePerPage;
@@ -53,13 +48,21 @@ const Pokedex = () => {
         <h1 className="title_pokedex">Pokedex</h1>
         <p className="subtitle_pokedex">
           Welcome
-          <span>{userName}, here you can find your favorite pokemon.</span>
+          <span className="span-user"> {userName}</span>, here you can find your
+          favorite pokemon.
         </p>
       </header>
 
       <aside>
-        <InputSearch />
-        <SelectByType setTypeSelected={setTypeSelected} />
+        <div className="aside">
+          <InputSearch />
+          <SelectByType setTypeSelected={setTypeSelected} setPage={setPage} />
+          <Pagination
+            page={page}
+            pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
+            setPage={setPage}
+          />
+        </div>
       </aside>
       <main>
         <div className="card-container">
@@ -68,6 +71,13 @@ const Pokedex = () => {
           ))}
         </div>
       </main>
+      <div className="aside">
+        <Pagination
+          page={page}
+          pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
+          setPage={setPage}
+        />
+      </div>
     </div>
   );
 };

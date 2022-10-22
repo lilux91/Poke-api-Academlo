@@ -38,5 +38,11 @@ justify-content: center;
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
+<<<<<<< HEAD
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+=======
     font-size: 1.5rem;
 }
+>>>>>>> 40e5b4385c52a2353033bd866a3a5dd9cebe5bc3
