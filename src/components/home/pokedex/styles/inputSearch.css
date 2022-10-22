@@ -1,18 +1,16 @@
-input__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.input__container{
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .input__btn {
-    padding: 10px;
+    padding: 8px;
     width: 20%;
     min-width: 150px;
     height: 45px;
-    margin-top: 20px;
-    margin-bottom: 40px;
     border-radius: 10px;
-    background-color: #D93F3F;
+    background-image: linear-gradient(to bottom, #8c0303, #970303, #a20203, #ad0203, #b80102, #c10605, #ca0c09, #d3110e, #dc1a17, #e52220, #ef2928, #f83030);    cursor: pointer;
     color: white;
     cursor: pointer;
     transition: filter 200ms ease;
@@ -27,8 +25,11 @@ input__container {
 }
 
 .input__search {
-    border-radius: 10px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 ;
     padding: 20px;
     width: 75%;
     max-width: 500px;
@@ -37,6 +38,11 @@ input__container {
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
+<<<<<<< HEAD
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+=======
+    font-size: 1.5rem;
+}
+>>>>>>> 40e5b4385c52a2353033bd866a3a5dd9cebe5bc3

@@ -1,0 +1,14 @@
+.clasific_pokemon{
+margin-left: 40%;
+margin-top: 0.5rem;
+font-size: 1.3rem;
+border-radius: 50px;
+padding: 0.4rem;
+color:rgb(109, 105, 105);
+border: none;
+box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.text_clasific{
+    font-size: 0.5rem;
+    font-weight: 500;
+}

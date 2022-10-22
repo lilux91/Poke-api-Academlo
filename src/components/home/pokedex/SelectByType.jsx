@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import '../pokedex/styles/selectByType.css'
+
 
 const SelectByType = ({ setTypeSelected }) => {
   const [types, setTypes] = useState();
@@ -19,10 +21,11 @@ const SelectByType = ({ setTypeSelected }) => {
   };
 
   return (
-    <select onChange={handleChange}>
-      <option value="All Pokemons">All Pokemons</option>
+    <select 
+    onChange={handleChange} className="clasific_pokemon">
+      <option className="text_clasific" value="All Pokemons">All Pokemons</option>
       {types?.map((type) => (
-        <option key={type.url} value={type.url}>
+        <option  key={type.url} value={type.url}>
           {type.name}
         </option>
       ))}
