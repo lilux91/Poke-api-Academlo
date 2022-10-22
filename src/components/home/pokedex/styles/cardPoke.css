@@ -1,6 +1,3 @@
-body{
-    background-color: rgba(132, 239, 19, 0.341);
-}
 .All_card{
     display: grid;
  
@@ -15,29 +12,36 @@ body{
     transition: 0.4s ease;
     padding: 2rem;
     margin: 1rem;
+    border: 10px outset;
+    border-color: rgb(220, 195, 7);
 }
-.card-poke:hover {
+.Card-poke-all:hover {
     transform: translateY(-10px);
     transform-origin: center;
     transition: 0.4s ease;
 }
-.card-poke:active {
+.Card-poke-all:active {
     transform: perspective(100px) scale3d(0, 0.1, 0.1) skew(5deg, 2deg);
     transform-origin: center;
     transition: 0.5s;
 }
 .card-poke_header {
-    height: 200px;
-    background-color: gray;
+    height: 280px;
+    background-image: url(/public/ball2.1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     margin-bottom: 65px;
+    z-index: 1000;
 }
 .card-poke_sprite {
-    width: 60%;
+    width: 65%;
     position: absolute;
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 100;
 }
 .card-poke_body {
     margin-bottom: 30px;
@@ -108,3 +112,5 @@ body{
     background-color: red;
     border-radius: 10px;  
 }
+
+/* Colors Pokemon Card  */

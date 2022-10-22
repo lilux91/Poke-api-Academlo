@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/pagination.css";
 
 const Pagination = ({ page, pagesLength, setPage }) => {
-  const pagesPerBlock = 8;
+  const pagesPerBlock = 20;
   const currentBlock = Math.ceil(page / pagesPerBlock);
   const blockLength = Math.ceil(pagesLength / pagesPerBlock);
 

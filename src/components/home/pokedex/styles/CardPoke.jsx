@@ -39,14 +39,14 @@ const CardPoke = ({ url }) => {
         <h3 className={`card-poke_name letter-${pokemon?.types[0].type.name}`}>
           {pokemon?.name}
         </h3>
-        <ul className="card-poke_types-container">
+        <ul className="card-poke_types-container"> 
+          <p className="card-poke_type-label">Type</p>
           {pokemon?.types.map((type) => (
             <li key={type.slot} className="card-poke_type">
               {type.type.name}
             </li>
           ))}
         </ul>
-        <p className="card-poke_type-label">Type</p>
       </section>
 
       <ul className="card-poke_stats-container">
