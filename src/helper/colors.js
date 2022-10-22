@@ -4,7 +4,7 @@ export const colors = {
     dragon: "rgba(133, 6, 1, 0.7)",
     ice: "rgba(172, 225, 225, 0.7)",
     psychic: "rgba(160, 108, 200, 0.55)",
-    electric: "rgba(238, 255, 0, 0.5)",
+    electric: "rgba(223, 234, 62, 0.5)",
     grass: " rgba(44, 151, 44, 0.7) ",
     water: "rgba(0, 208, 255, 0.5)",
     fire: "rgb(249, 143, 15,0.6)",

@@ -59,7 +59,7 @@
     font-size: 4rem;
     font-weight: 900;
     font-family: 'Londrina Sketch', cursive;
-    color: rgb(220, 195, 7);
+    color: rgb(232, 207, 13);
     text-shadow:8px 5px 10px  rgb(2, 10, 125);
 }
 .card-poke_type {
@@ -133,6 +133,6 @@
 
 /* Colors Pokemon Card  */
 .target{
-    color: rgba(179, 225, 145, 0.794);
+    color: rgba(223, 234, 62, 0.5);
 
 }
