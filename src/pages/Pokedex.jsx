@@ -5,6 +5,7 @@ import InputSearch from "../components/home/pokedex/InputSearch";
 import SelectByType from "../components/home/pokedex/SelectByType";
 import CardPoke from "../components/home/pokedex/styles/CardPoke";
 import '../pages/styles/pokedex.css'
+import '../components/home/pokedex/styles/inputSearch.css'
 
 
 const Pokedex = () => {
@@ -35,6 +36,7 @@ const Pokedex = () => {
 
   //Lógica de programación
   const [page, setPage] = useState(1);
+  //Para que te aparezca los pokemons que queres que se vea en la pagina
   const [pokePerPage, setPokePerPage] = useState(8);
   //initial 1-1  8=0
   //2-1          8 =8
