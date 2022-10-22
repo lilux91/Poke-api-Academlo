@@ -12,9 +12,9 @@ const InputSearch = () => {
   };
 
   return (
-    <form onSubmit={submit}>
-      <input id="search" type="text" placeholder="Search a pokemon" />
-      <button>Search</button>
+    <form className='input__container' onSubmit={submit}>
+      <input className='input__search' id="search" type="text" placeholder="Search a pokemon" />
+      <button className='input__btn'>Search</button>
     </form>
   );
 };
