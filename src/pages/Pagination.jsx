@@ -2,17 +2,17 @@ import React from "react";
 import "./styles/pagination.css";
 
 const Pagination = ({ page, pagesLength, setPage }) => {
-  const pagesPerBlock = 20;
+  const pagesPerBlock = 8;
   const currentBlock = Math.ceil(page / pagesPerBlock);
   const blockLength = Math.ceil(pagesLength / pagesPerBlock);
 
-  const arrePages = [];
+  const arrPages = [];
   const initialPage = (currentBlock - 1) * pagesPerBlock + 1;
   //  initialPage + pagesPerBlock - 1
   const limitPage =
     blockLength === currentBlock ? pagesLength : currentBlock * pagesPerBlock;
   for (let i = initialPage; i <= limitPage; i++) {
-    arrePages.push(i);
+    arrPages.push(i);
   }
 
   const handlePrev = () => {
@@ -27,14 +27,6 @@ const Pagination = ({ page, pagesLength, setPage }) => {
     setPage(currentPage);
   };
 
-  const handleFirst = () => {
-    setPage(1);
-  };
-
-  const handleLast = () => {
-    setPage(pagesLength);
-  };
-
   return (
     <div className="pagination">
       {page > 1 && (
@@ -45,34 +37,17 @@ const Pagination = ({ page, pagesLength, setPage }) => {
           &#60;
         </div>
       )}
-      {page > 1 && (
-        <div
-          onClick={handleFirst}
-          className="pagination__page pagination__active"
-        >
-          ...
-        </div>
-      )}
-
       <ul className="pagination__container">
-        {arrePages.map((e) => (
+        {arrPages.map((e) => (
           <li
-            className={`pagination__page ${page === e && "pagination__active"}`}
             onClick={() => handlePage(e)}
+            className={`pagination__page ${page === e && "pagination__active"}`}
             key={e}
           >
             {e}
           </li>
         ))}
       </ul>
-      {page < pagesLength && (
-        <div
-          onClick={handleLast}
-          className="pagination__page pagination__active"
-        >
-          ...
-        </div>
-      )}
       {page < pagesLength && (
         <div
           onClick={handleNext}
