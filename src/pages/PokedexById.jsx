@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Pokemon404 from "../components/home/pokedexId/Pokemon404";
 {/*import "./styles/pokedexById.css";*/}
 
+
 const PokedexById = () => {
   const { id } = useParams();
 
