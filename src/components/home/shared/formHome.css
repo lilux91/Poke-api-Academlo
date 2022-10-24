@@ -39,29 +39,45 @@
 }
 
 .pokedex_input {
-  display: block;
+
   font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 25ch;
   font-weight: 500;
   line-height: 29px;
-
+width: 100%;
   /* Duracion de animacion para type machine */
   animation: typing 3s steps(25), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
+::placeholder{
+  font-size: 1.4rem;
+  
+
+}
+/* Animacion para marcador de lado */
 @keyframes typing {
   from {
     width: 0;
-    border-color: rgb(140, 36, 24);
   }
 }
 
+/* animacion para parpadeo  */
 @keyframes blink {
   50% {
     border-color: rgb(228, 225, 225);
     transition: 0.2s;
   }
+}
+
+@media (max-width:600px ){
+
+  ::placeholder{
+    font-size: 0.8rem;
+    }
+
+    .pokedex_btn {
+      font-size: 1.1rem;
+    }
 }
