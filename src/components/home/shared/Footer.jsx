@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer_black"></div>
-      <div className="footer_circle">
-        <div className="footer_circle-int"></div>
+      <div className="footer__circle">
+        <div className="footer__circle-int"></div>
       </div>
     </footer>
   );

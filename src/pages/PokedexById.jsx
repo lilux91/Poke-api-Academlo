@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Pokemon404 from "../components/home/pokedexId/Pokemon404";
 
+
 const PokedexById = () => {
   const { id } = useParams();
 
