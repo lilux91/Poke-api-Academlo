@@ -36,35 +36,4 @@
     border: 7px solid white;
     background-image: linear-gradient(to top, #696565, #4e4b4c, #353334, #1e1d1d, #000000);}
 
-    @media (max-width:600px ){
-
-
-        .footer{
-            
-            height: 4rem;
-        }
-
-        .footer_black{
-            height: 2.2rem;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        .footer__circle {
-            width: 2.8rem;
-            height: 2.8rem;
-            transform: translate(-50%,-12px);
-
-        }
-
-        .footer__circle-int {
-            width: 2rem;
-            height: 2rem;
-            position: absolute;
-            transform: translate(-50%, 5px);
-            border: 4px solid white;
-           }
-        
-      
-      }
+    

@@ -9,7 +9,7 @@ body{
 .title_pokedex{
     text-transform: capitalize;
     text-align: center;
-    font-size: 12rem;
+    font-size: var(--fs_title);
     font-weight: 900;
     font-family: 'Londrina Sketch', italic;
     color: rgb(232, 207, 13);
@@ -30,8 +30,7 @@ body{
 
 }
 
-
-* {
+:root {
     --grass: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
     --fire: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
     --water: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
@@ -115,6 +114,7 @@ body{
     margin-bottom: 20px;
     justify-content: space-evenly;
     list-style: none;
+    
 }
 
 .span {
@@ -338,3 +338,4 @@ body{
 .fairy {
     background: var(--fairy)
 }
+

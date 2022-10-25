@@ -3,7 +3,15 @@
 :root{
     --color_red:#fe1936;
     --color_white: white;
+    --fs_title:12rem;
 }
+@media (max-width:500px) {
+:root {
+        
+        --fs_title: 4rem;
+    }
+}
+
 
 
 /*-----Reset----*/
