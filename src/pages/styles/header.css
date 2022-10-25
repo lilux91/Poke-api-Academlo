@@ -5,15 +5,15 @@
 }
 
 .header-red {
-    background-color: #DD1A1A;
+    background-image: linear-gradient(to bottom, #8c0303, #970303, #a20203, #ad0203, #b80102, #c10605, #ca0c09, #d3110e, #dc1a17, #e52220, #ef2928, #f83030);    cursor: pointer;
     width: 100%;
     height: 100%;
 }
 
 .header-black {
     position: absolute;
-    background-color: black;
-    height:50px;
+    background-image: linear-gradient(to bottom, #110d0d, #171414, #1d1919, #221f1f, #282424, #2d2929, #332f2f, #383434, #3f3a3a, #454040, #4c4747, #534d4d);    width: 100%;
+    height: 3.2rem;
     width: 100%;
     z-index: 1;
     bottom: -1px;

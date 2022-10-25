@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles/Header.css";
+import "./styles/header.css";
 
 const Header = () => {
   return (
     <div className="header-container">
       <div className="header-red">
-        <img src="/title.png" className="header-img"/>
+        <img src="/public/images/home/pokedex.png" className="header-img"/>
         <div className="header-black"></div>
       </div>
     </div>

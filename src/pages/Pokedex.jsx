@@ -44,6 +44,7 @@ const Pokedex = () => {
 
   return (
     <div>
+      
       <header>
         <h1 className="title_pokedex">Pokedex</h1>
         <p className="subtitle_pokedex">
