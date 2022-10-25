@@ -34,7 +34,7 @@ const Pokedex = () => {
 
   const userName = useSelector((state) => state.userName);
 
-  //!Lógica de paginacion
+  // Lógica de paginacion
 
   const [page, setPage] = useState(1);
   const [pokePerPage, setPokePerPage] = useState(8);

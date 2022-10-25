@@ -6,7 +6,7 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 1.5rem;
     margin-bottom: 0;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
     
 }
 .Card-poke-all{
@@ -129,9 +129,11 @@
     position: absolute;
     left:0;
     padding-left: 1rem;
-    background-color: rgb(226, 145, 145);
-    border-radius: 10px;  
+    background-image: radial-gradient(circle at 71.87% 42.04%, #ffff35 0, #e2c818 50%, #a48a00 100%);
+    border-color:#e2c818;  
+    height: 20px;
 }
+
 
 
 /* Colors Pokemon Card  */
